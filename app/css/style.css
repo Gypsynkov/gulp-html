@@ -1,1 +1,2 @@
-body{font:100% Helvetica,sans-serif;color:#333}.item-1{width:2em}.item-2{width:4em}.item-3{width:6em}
+.button-key{width:30px;height:30px;background-color:#000;margin:3px;padding:3px;float:left;color:#fff}.clearFix{clear:both;display:block;width:100%}.result{width:680px;height:80px;margin:0 auto;display:block;padding:10px;font-size:18px;color:#444;margin-bottom:10px}.klaviatura{margin-left:250px;border:2px solid #000;display:inline-block}.active{background-color:gray}
+/*# sourceMappingURL=style.css.map */

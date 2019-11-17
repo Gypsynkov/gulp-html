@@ -1,1 +1,43 @@
-// Here we write your SCSS style
+.button-key{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+   
+    margin: 3px;
+    padding: 3px;
+    float: left;
+    color: white;
+     
+	
+}
+.clearFix{
+    clear: both;
+    display: block;
+    width: 100%;
+}
+.result{
+	width: 680px;
+    height: 80px;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+
+}
+
+.klaviatura{
+  
+   margin-left: 250px;
+    border: 2px solid black;
+    
+    display: inline-block;
+ 
+   
+}
+
+.active {
+background-color: gray;
+}
+
