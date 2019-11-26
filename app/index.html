@@ -2,18 +2,98 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="description" content="Короткое описание страницы"/>
-	<meta name="author" lang="en" content="Alexander Panov" />
-	<title>Title</title>
+    <meta name="description" content="canvas" />
+    <meta name="author" lang="en" content="Gypsynkov" />
+    <title>Title</title>
 
     <!-- build:css css/style.min.css-->
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
     <!-- endbuild -->
 
 </head>
+
 <body>
-<h1>Hello world!</h1>
+    <div class="head"><h1>CodeJam - Animation Player</h1></div>
+    <div class="main_content">
+        <div class="toolbar">
+            <div class="tool_icons">
+                <div class="icon"><img src="assets/Vector.png" alt="icon"></div>
+                <div class="icon"><img src="assets/Vector2.png" alt="icon2"></div>
+            </div>
+            <div class="tool_icons">
+                <div class="icon"><img src="assets/Vector3.png" alt="icon3"></div>
+                <div class="icon"><img src="assets/Vector4.png" alt="icon4"></div>
+            </div>
+        </div>
+        <div class="frames_preview">
+            <div class="frame_1">
+                <div class="frame_number">1</div>
+                <div class="simple_img"><img src="assets/image.png" alt="simple"></div>
+                <div></div>
+            </div>
+            <div class="frame_2">
+                <div class="frame_number_one">2</div>
+                <div class="frame_number_two"><img src="assets/box.svg" alt="box"></div>
+                <div class="frame_number_three"><img src="assets/dots.svg" alt="box"></div>
+                <div class="frame_number_four"><img src="assets/files.svg" alt="box"></div>
+
+
+            </div>
+            <div class="frame_3">
+                <div class="frame_number_one">3</div>
+                <div class="frame_number_two"><img src="assets/box.svg" alt="box"></div>
+                <div class="frame_number_three"><img src="assets/dots.svg" alt="box"></div>
+                <div class="frame_number_four"><img src="assets/files.svg" alt="box"></div>
+            </div>
+            <div class="frame-button">
+
+
+                <div><img src="assets/plus.svg" alt="plus"></div>
+                <div> Add new frame</div>
+
+            </div>
+
+        </div>
+        <div class="draw_area">
+
+               
+            <div class="canvas_area">
+                    <form class="form">
+                            <input id="input_search" class="input" type="text" placeholder="Искать здесь...">
+                            <button id='button_search' type="submit">Search</button>
+                          </form>
+                <canvas id="canvas" ></canvas>
+            <div>You can set color=><input id='color' type="color">
+            Please, press S to save image!!!
+            Press R to replay your saved picture!!!
+            Press С to clear canvas area!!!
+            </div>
+           
+        </div>
+
+        <div>
+            </div>
+        </div>
+
+        <div class="preview_area">
+
+            <div class="result"></div>
+            <div class="buttons">
+                <button class="btn">2 FPS</button>
+                <button class="btn">4 FPS</button>
+                <button class="btn">8 FPS</button>
+
+            </div>
+        </div>
+
+
+    </div>
+    <script src="js/start.js">
+      
+    </script>
 </body>
+
 </html>

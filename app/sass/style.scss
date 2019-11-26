@@ -1,1 +1,239 @@
-// Here we write your SCSS style
+body{
+background-image: url('/app/assets/image.png');
+
+
+}
+
+.head{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+}
+
+.main_content{
+    max-width: 1442px;
+    max-height: 1400px;
+display: grid;
+grid-template-columns: 10% 20% 45% 25%;
+align-items: center;
+justify-content: center;
+
+.toolbar{
+
+    width: 40px;
+    height: 240px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
+ 
+    align-items: center;
+    justify-items: center;
+.tool_icons{
+    border: 2px solid gray;
+    width: 40px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    .icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+  
+}
+}
+
+.frames_preview{
+   
+display: grid;
+grid-auto-rows: 1fr 1fr 1fr 1/2fr;
+row-gap: 20px;
+justify-content: center;
+align-content: center;
+.frame_1{
+    width: 96px;
+    height: 96px;
+    background-color: #E5E5E5;
+    border: 3px solid gray;
+    display: grid;
+    grid-auto-rows: 1fr 1fr 1fr;
+    
+    .frame_number{
+        width: 24px;
+        height: 24px;
+    background-color: gray;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+   
+    }
+    .simple_img{
+align-self: center;
+justify-self: center;
+    }
+
+ 
+}
+
+
+}
+.frame_2, .frame_3{
+    width: 96px;
+    height: 96px;
+    border: 3px solid gray;
+    background-color: #E5E5E5;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    .frame_number_one{
+        width: 24px;
+        height: 24px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .frame_number_two{
+        width: 24px;
+        height: 24px;
+    background-color: gray;
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .frame_number_three{
+        width: 24px;
+        height: 24px;
+    background-color: gray;
+    align-self: flex-end;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .frame_number_four{
+        width: 24px;
+        height: 24px;
+    background-color: gray;
+    justify-self: end;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+
+}
+
+.frame-button{
+ background-color: #E5E5E5;
+ border: 4px solid gray;
+ max-width: 96px;
+ display:grid;
+ grid-template-columns: 30% 70%;
+ justify-items: center;
+ align-items: center;
+}
+
+.draw_area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+.canvas_area{
+   
+   
+
+justify-content: center;
+}
+
+}
+
+
+.preview_area{
+    width: 200px;
+    height: 200px;
+    align-self: start;
+    justify-self: center;
+    background-color: green;
+display: grid;
+grid-template-rows: 80% 20%;
+.result{
+    background-color: #CCCBCB;
+}
+.buttons{
+    background-color: #A1A0A0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .btn{
+        display: inline-block;
+        text-align: center;
+        text-decoration: none;
+        margin: 2px 0;
+        border: solid 1px transparent;
+        border-radius: 10px;
+        padding: 5px 5px;
+        color: #ffffff;
+   background-color: black;
+    }
+    
+}
+}
+}
+
+#canvas{
+    border: 2px solid black;
+    
+}
+
+
+
+
+
+  .form {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .input {
+    width: 100%;
+    height: 42px;
+    padding-left: 10px;
+    border: 2px solid #7BA7AB;
+    border-radius: 5px;
+    outline: none;
+    background: #F9F0DA;
+    color: #9E9C9C;
+  }
+  #button_search{
+    position: absolute; 
+    top: 0;
+    right: 0px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    background: yellow;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  #button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: red;
+  }
